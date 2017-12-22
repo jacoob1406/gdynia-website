@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Miasto z Morza i Marzeń</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="js/script.js" async></script>  
+    </head>
+    <body>
+        <nav>
+            <div class="play-music">&#9835;</div>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i> 
+            </div>
+            <ul>
+                <li><a href="#">Gdynia</a></li>
+                <li><a href="#2">Zdjęcia</a></li>
+                <li><a href="#3">Pogoda</a></li>
+                <li><a href="#4">Praktyczne info</a></li>
+            </ul>
+        </nav> 
+        <section class="intro-section">
+            <div class="intro-gdynia">
+                <h1 class="gdynia-heading">GDYNIA</h1>
+                <div class = gdynia-quote>
+                    <blockquote>
+                        <p>W Gdyni zacząłem dość wcześnie odczuwać coś, co można by nazwać poczuciem więzi wspólnotowej.</p> 
+                        <footer>— Edmund Szczesiak</footer>
+                    </blockquote>
+                </div>
+                <a href="#2"><img class="arrow-down" id="2" src="media/down-arrow.png"></a>
+            </div>
+
+        </section>
+        <section class="gallery-pics" >
+            <h3 class="gallery-heading">
+                Kiedyś i dziś...
+            </h3>
+            <div class="pics-container">
+                <div class="pic-item">
+                    <img src="media/kamienna_dawniej.jpg" alt="Kammienna Góra - dawniej" class="gdynia-pic" id="myImg1">
+                    <p class="pic-caption">Kammienna Góra - dawniej</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/dworzec_dawniej.jpg" alt="Gdynia Główna - dawniej" class="gdynia-pic" id="myImg2">
+                    <p class="pic-caption">Gdynia Główna - dawniej</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/orlowo_dawniej.jpg" alt="Orłowo - dawniej" class="gdynia-pic" id="myImg3">
+                    <p class="pic-caption">Orłowo - dawniej</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/skwer_dawniej.jpg" alt="Skwer Kościuszki - dawniej" class="gdynia-pic" id="myImg4">
+                    <p class="pic-caption">Skwer Kościuszki - dawniej</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/kamienna_dzis.jpg" alt="Kammienna Góra - dziś" class="gdynia-pic" id="myImg5">
+                    <p class="pic-caption">Kammienna Góra - dziś</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/dworzec_dzis.jpg" alt="Gdynia Główna - dziś" class="gdynia-pic" id="myImg6">
+                    <p class="pic-caption">Gdynia Główna - dziś</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/orlowo_dzis.jpg" alt="Orłowo - dziś" class="gdynia-pic" id="myImg7">
+                    <p class="pic-caption">Orłowo - dziś</p>
+                </div>
+                <div class="pic-item">
+                    <img src="media/skwer_dzi%C5%9B.JPG" alt="Skwer Kościuszki - dziś" class="gdynia-pic" id="myImg8">
+                    <p class="pic-caption" id="3">Skwer Kościuszki - dziś</p>
+                </div>
+            </div>       
+        </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <section class="gdynia-weather">
+            <div class="container-weather">
+                <div class="half-weather">
+                    <h3>Pogoda w Gdyni</h3>
+                    <br>
+                    <div class="text-center" id="currentWeather">x</div>
+                    <br>
+                    <div class="text-center" id="currentTemp">x</div> <br>
+                    <div class="weather-icon" id="icon">x</div><br>
+                    <div class="time">
+                    </div>
+                </div>
+                <div class="half-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SuCcNTS-vf4?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="general-information">
+            <div class="info-container">
+                <div class="info-item">
+                    <h3>KONTAKT</h3>
+                    <ul>
+                        <li>Urząd Miasta Gdyni</li>
+                        <li>Piłsudskiego 52/54</li>
+                        <li>81-382 Gdynia</li>
+                        <li><a href="mailto:umgdynia@gdynia.pl" class="mail">&#9993;umgdynia@gdynia.pl</a></li>
+                        <li>&#9742; 58 66 88 000</li>
+                    </ul>
+                </div>
+                <div class="info-item info2" id="4">
+                    <h3>PRZYDATNE STRONY</h3>
+                    <ul>
+                        <li><a href="http://www.gdynia.pl" class="info-site">Oficjalna strona miasta</a></li>
+                        <li><a href="http://gdynia.naszemiasto.pl/" class="info-site">Naszemiasto.pl - Gdynia</a></li>
+                        <li><a href="http://gdyniakulturalna.pl/" class="info-site">Gdynia kulturalna</a></li>
+                        <li><a href="http://gdyniasport.pl/" class="info-site">Sport w Gdyni</a></li>
+                        <li class="social-media">
+                            <a href="https://www.facebook.com/Gdynia/" class="info-site"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                            <a href="https://www.instagram.com/gdynia_official/" class="info-site"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                            <a href="https://twitter.com/miastogdynia" class="info-site"><i class="fa fa-twitter-square" style="font-size:24px"></i></a>
+                            <a href="https://www.youtube.com/user/umgdynia" class="info-site"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-herb">
+                    <img src="media/herb-gdynia.png" alt="Herb Gdyni" class="herb">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <p>COPYRIGHT &copy; 2017 - JAKUB LEMKA - MADE WITH &#10084; AND <a href="https://youtu.be/Jjq6e1LJHxw">&#9835;</a></p> 
+            </div>
+        </footer>
+        <audio loop src="media/seashore.mp3" id="music"></audio>
+
+
+    </body>
+</html>
