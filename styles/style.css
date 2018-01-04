@@ -14,7 +14,7 @@ h1 {
     margin: 0;
 }
 
-/*NAVIGATION BAR*/
+/*NAVIGATION  BAR*/
 
 nav {
     width: 100%;
@@ -104,6 +104,10 @@ nav ul li a:hover:before {
 
 .playing {
     text-decoration: line-through;
+}
+
+.noactive{
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -358,7 +362,6 @@ blockquote footer {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 
 @media only screen and (max-width: 700px) {
     .modal-content {
