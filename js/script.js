@@ -12,10 +12,12 @@ $(document).ready(function () {
         } else {
             myAudio.trigger('play');
             isPlaying = true;
-        }
-        ;
-    }
-    ;
+        };
+    };
+    
+    $('#2').click(function(){
+        $("html, body").animate({ scrollTop: $('#2').offset().top }, 1000);
+    });
 
     $('.play-music').click(function () {
         togglePlay();
@@ -131,8 +133,7 @@ $(document).ready(function () {
             img7.src = icons[6];
             img8.src = icons[7];
 
-            if (((monthNum < 5 || monthNum > 9) && (hour < 7 || hour > 17) && (x >= 770 && x < 805)) || ((monthNum >= 5 || monthNum <= 9) && (hour < 6 || hour > 20) && (x >= 770 && x < 805)))
-            {
+            if (((monthNum < 5 || monthNum > 9) && (hour < 7 || hour > 17) && (x >= 770 && x < 805)) || ((monthNum >= 5 || monthNum <= 9) && (hour < 6 || hour > 20) && (x >= 770 && x < 805))) {
                 $('#icon').html(img8);
                 $("#currentWeather").html("bezchmurna noc");
             } else if (x < 300) {
