@@ -117,6 +117,8 @@ $(document).ready(function () {
             $("#currentTemp").html(currentTemp + "&#x2103");
 
             const x = location.weather[0].id;
+            
+            console.log(location.weather);
 
             let img1 = document.createElement("IMG");
             let img2 = document.createElement("IMG");
@@ -135,9 +137,9 @@ $(document).ready(function () {
             img7.src = icons[6];
             img8.src = icons[7];
 
-            if (((monthNum < 5 || monthNum > 9) && (hour < 7 || hour > 17) && (x >= 770 && x < 805)) || ((monthNum >= 5 || monthNum <= 9) && (hour < 6 || hour > 20) && (x >= 770 && x < 805))) {
+            if (((monthNum < 5 || monthNum > 9) && (hour < 7 || hour > 17) && (x >= 770 && x < 805)) || ((monthNum >= 5 || monthNum <= 9) && (hour < 6 || hour > 20) && (x >= 700))) {
                 $('#icon').html(img8);
-                $("#currentWeather").html("bezchmurna noc");
+                $("#currentWeather").html("noc bez opadów");
             } else if (x < 300) {
                 $('#icon').html(img1);
                 $("#currentWeather").html("burza z piorunami");
@@ -150,15 +152,15 @@ $(document).ready(function () {
             } else if (x >= 600 && x < 700) {
                 $('#icon').html(img4);
                 $("#currentWeather").html("opady śniegu");
-            } else if (x >= 700 && x < 770) {
+            } else if (x >= 700 && x < 799) {
                 $('#icon').html(img5);
                 $("#currentWeather").html("mgła");
-            } else if (x >= 770 && x < 805) {
+            } else if (x >= 800 && x < 802) {
                 $('#icon').html(img6);
                 $("#currentWeather").html("bezchmurne niebo");
-            } else if (x >= 805) {
+            } else if (x >= 803) {
                 $('#icon').html(img7);
-                $("#currentWeather").html("zachmurzenie całkowite");
+                $("#currentWeather").html("zachmurzenie");
             }
         }
 
