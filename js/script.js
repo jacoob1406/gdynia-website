@@ -14,9 +14,11 @@ $(document).ready(function () {
             isPlaying = true;
         };
     };
-    
-    $('#2').click(function(){
-        $("html, body").animate({ scrollTop: $('#2').offset().top }, 1000);
+
+    $('#2').click(function () {
+        $("html, body").animate({
+            scrollTop: $('#2').offset().top
+        }, 1000);
     });
 
     $('.play-music').click(function () {
