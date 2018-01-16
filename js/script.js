@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    
+        $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 40
+        }, 500);
+    });
 
     const myAudio = $('#music');
     myAudio.trigger('load');
